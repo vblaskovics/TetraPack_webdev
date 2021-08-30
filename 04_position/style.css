@@ -1,3 +1,19 @@
 .red-color {
     color: red;
 }
+
+.box {
+    height: 40px;
+}
+
+.box-red {
+    background-color: red;
+    display: inline;
+}
+.box-green {
+    background-color: green;
+    display: inline;
+}
+.box-blue {
+    background-color: blue;
+}
