@@ -1,0 +1,20 @@
+p {
+    font-size: 18px;
+}
+
+h2 + p {
+    color: #ff0000;
+    font-size: 20px;
+}
+
+h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+ul ul li {
+    list-style-type: circle;
+}
