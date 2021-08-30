@@ -17,3 +17,27 @@
 .box-blue {
     background-color: blue;
 }
+.box-invisible {
+    display: none;
+}
+.box-grey {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    position:relative;
+    top: 40px;
+    left: 80px;
+}
+#absolute-div {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+}
+.box-border {
+    border: solid 2px green;
+    position:fixed;
+    top: 20px;
+    left: 350px;
+    width: 100px;
+    height: 100px;
+}
