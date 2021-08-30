@@ -1,0 +1,34 @@
+div {
+    padding: 20px;
+}
+
+.leaf {
+    background-color: green;
+}
+
+#floor {
+    margin-left: 200px;
+    width: 50px;
+    background-color: brown;
+}
+
+#level1 {
+    margin-left: 100px;
+    width: 250px;
+}
+#level2 {
+    margin-left: 125px;
+    width: 200px;
+}
+#level3 {
+    margin-left: 150px;
+    width: 150px;
+}
+#level4 {
+    margin-left: 175px;
+    width: 100px;
+}
+#level5 {
+    margin-left: 200px;
+    width: 50px;
+}
