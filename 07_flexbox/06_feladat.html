@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container-top {
+            height: 100px;
+            background-color: blue;
+            display: flex;
+            align-items: stretch;
+        }
+        
+        .container-bottom {
+            height: calc(100% - 100px);
+            /* flex-grow: 1; */
+            background-color: rgb(255, 0, 149);
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .container-top div {
+            background-color: cornsilk;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .menu-item {
+            background-color: cornsilk;
+            margin: 10px;
+            font-size: 30px;
+            line-height: 75px;
+        }
+
+        .container-bottom-left {
+            background-color: crimson;
+            height: 100%;
+            min-width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .container-bottom-right {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-top">
+            <div class="menu-item">HOME</div>
+            <div class="menu-item">SERVICES</div>
+            <div class="menu-item">ABOUT US</div>
+        </div>
+    
+        <div class="container-bottom">
+            <div class="container-bottom-left">
+                <div class="menu-item">Item#1</div>
+                <div class="menu-item">Item#2</div>
+                <div class="menu-item">Item#3</div>
+            </div>
+            <div class="container-bottom-right">
+                <img src="laptop.jpg" alt="">
+            </div>
+        </div>
+    </div>    
+
+
+</body>
+</html>
