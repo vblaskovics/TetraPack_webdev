@@ -49,6 +49,7 @@ table, th, td {
     color: white;
 }
 
+/* Ezt azért csináltam, hogy a reklámok megkapják */
 .popup {
     position: fixed;
     background-color: magenta;
@@ -62,5 +63,9 @@ table, th, td {
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
-    color: white;
+    color: yellow;
+
+    border-radius: 40px;
+    text-shadow: 5px 5px 2px red;
+    box-shadow: 4px 4px 10px 3px black;
 }

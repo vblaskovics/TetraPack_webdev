@@ -53,12 +53,12 @@ table, th, td {
 
 .popup {
     position: fixed;
+    bottom: 10px;
+    right: 50px;
     background-color: magenta;
     border: 10px solid darkmagenta;
     text-align: center;
     padding-top: 40px;
-    top: 350px;
-    left: 550px;
     width: 300px;
     height: 60px;
     font-size: large;
