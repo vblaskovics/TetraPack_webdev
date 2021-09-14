@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Kvíz</h1>
+
+    <p>1. Mikor koronázták királlyá I. Szent Istvánt?</p>
+    <input type="text" id="kerdes-1">
+    <button onclick="ellenorizKerdes1()">Ellenőrizd</button>
+
+    <p>2. Sző fon nem takács, mi az?</p>
+    <input type="text" id="kerdes-2">
+    <button onclick="ellenorizKerdes2()">Ellenőrizd</button>
+
+    <p>3. Add meg valamelyik nyári hónap sorszámát!</p>
+    <input type="text" id="kerdes-3">
+    <button onclick="ellenorizKerdes3()">Ellenőrizd</button>
+
+    <p>4. Add meg valamelyik nem nyári hónap sorszámát!</p>
+    <input type="text" id="kerdes-4">
+    <button onclick="ellenorizKerdes4()">Ellenőrizd</button>
+
+    <script>
+        function ellenorizKerdes1() {
+            let valasz = document.getElementById("kerdes-1").value;
+            // alert("A válaszod: " + valasz);
+            if (valasz == 1000) {
+                alert("Helyes válasz!");
+            } else {
+                alert("Helytelen válasz!")
+            }
+        }
+
+        function ellenorizKerdes2() {
+            let valasz = document.getElementById("kerdes-2").value;
+            if (valasz == "pók") {
+                alert("Helyes válasz!");
+            } else {
+                alert("Helytelen válasz!")
+            }
+        }
+
+        function ellenorizKerdes3() {
+            let valasz = document.getElementById("kerdes-3").value;
+            if (6 <= valasz && valasz <= 8) {
+                alert("Helyes válasz!");
+            } else {
+                alert("Helytelen válasz!")
+            }
+        }
+
+        function ellenorizKerdes4() {
+            let valasz = document.getElementById("kerdes-4").value;
+            if ((1 <= valasz && valasz < 6) || (8 < valasz && valasz <= 12)) {
+                alert("Helyes válasz!");
+            } else {
+                alert("Helytelen válasz!")
+            }
+        }
+    </script>
+</body>
+
+</html>

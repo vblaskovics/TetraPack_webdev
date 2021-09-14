@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // logikai típus, boolean
+
+        let b = true;
+        console.log(b);
+        b = false;
+        console.log(b);
+
+        // Logikai kifejezések
+        b = 3 < 4;
+        console.log(b); //true
+        b = 3 > 4;
+        console.log(b); //false
+
+        console.log(10 >= 8);
+
+        // Logikai műveletek
+        console.log(false || false);
+        console.log(false || true);
+        console.log(false && false);
+        console.log(false && true);
+
+        let x = 8;
+        let kisebbMint10 = x < 10;
+        console.log(kisebbMint10); // true
+
+        // if vezérési szerkezet
+        if (3 < 4) {
+            console.log("3 kisebb mint 4");
+        }
+
+        if (4 < 3) {
+            console.log("4 kisebb mint 3");
+        }
+
+        if (true) {
+            console.log("true van a zárójelek között");
+        }
+
+        if (false) {
+            console.log("false van a zárójelek között");
+        }
+
+        let z = 7;
+        if (z < 5) {
+            console.log("z kisebb mint 5");
+        } else {
+            console.log("z nem kisebb mint 5");
+        }
+
+        if (z == 5) {
+            console.log("z egyenlő 5");
+        }
+
+        if (z != 5) {
+            console.log("z nem egyenlő 5");
+        }
+    </script>
+</body>
+
+</html>

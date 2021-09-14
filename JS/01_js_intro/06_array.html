@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Tömb létrehozása
+        let tomb1 = ["alma", "körte", "dinnye"];
+
+        // Tömb hossza
+        console.log(tomb1.length);
+
+        // Tömb elemeinek lekérdezése
+        console.log(tomb1[0]);
+        console.log(tomb1[1]);
+        console.log(tomb1[2]);
+
+        // Tömb értékadás
+        tomb1 = ["Péter", "Gábor"];
+        console.log(tomb1);
+
+        tomb1[0] = "Viktória";
+        console.log(tomb1);
+
+        // Rossz index
+        console.log(tomb1[10]);
+
+        let nev = "Lajos";
+        tomb1[1] = nev;
+        console.log(tomb1);
+
+        tomb1 = [nev, nev, 3, 'kiskutya'];
+        console.log(tomb1);
+
+        // Push metódus
+        tomb1.push("első");
+        tomb1.push("második");
+        console.log(tomb1);
+    </script>
+</body>
+
+</html>
