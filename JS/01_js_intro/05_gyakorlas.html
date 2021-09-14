@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. Írj függvényt, ami kiszámolja egy téglalap 
+        // kerületét a hoszúság és magasság alapján!
+        function kerulet(hosszusag, magassag) {
+            let k = 2 * (hosszusag + magassag);
+            return k;
+        }
+        console.log(kerulet(10, 5));
+
+        // 2. Írj függvényt, ami a bemenetként kapott szó végére
+        // három felkiáltójelet ír!
+        function hozzaad3felkialtojel(szo) {
+            return szo + '!!!';
+        }
+        console.log(hozzaad3felkialtojel('Helló'));
+
+        // 3. Írj függvényt, ami a bemenetként kapott szót
+        // idézőjelek közé teszi! Hívd meg 3 különféle szóval
+        // ezt a függvényt.
+        function hozzaadIdezojel(szo) {
+            return '"' + szo + '"';
+        }
+        console.log("Péter");
+        console.log(hozzaadIdezojel("Péter"));
+        console.log("Gábor");
+        console.log(hozzaadIdezojel("Gábor"));
+        console.log("László");
+        console.log(hozzaadIdezojel("László"));
+    </script>
+
+</body>
+
+</html>
