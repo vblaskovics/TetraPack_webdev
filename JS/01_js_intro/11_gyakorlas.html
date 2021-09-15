@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. Feladat 
+        // Írj egy függvényt (szoKeres), ami két paramétert vár: az első egy tömb, a második
+        // egy string. A függvény keresse meg a tömbön belül a kapott stringet.
+        // Ha a tömbben a string nem található, akkor a visszatérési érték -1 legyen,
+        // egyébként a visszatérési érték a kapott string tömbön belüli indexe legyen.
+        //
+        // Példa:
+        // let t1 = ['alma', 'körte', 'banán'];
+        // console.log(szoKeres(t1, 'körte'));         --> 1
+        // console.log(szoKeres(t1, 'banán'));         --> 2
+        // console.log(szoKeres(t1, 'alma'));          --> 0
+        // console.log(szoKeres(t1, 'palacsinta'));    --> -1
+
+        function szoKeres(szoTomb, szo) {
+            for (let i = 0; i < szoTomb.length; i++) {
+                if (szoTomb[i] == szo) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+
+        console.log(szoKeres(['alma', 'körte', 'banán', 'ananász', 'asdasd'], 'palacsinta'));
+        console.log(szoKeres(['alma', 'körte', 'ananász', 'asdasd'], 'palacsinta'));
+        console.log(szoKeres(['alma', 'körte', 'banán', 'ananász', 'asdasd'], 'palacsinta'));
+    </script>
+</body>
+
+</html>
